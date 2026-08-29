@@ -21,5 +21,5 @@ javac src/Main.java
 ```
 Run with:
 ```bash
-java Main
+java src/Main.java
 ```
