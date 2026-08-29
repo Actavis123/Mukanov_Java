@@ -26,7 +26,7 @@ public class Main {
         }
 
         // Task 1.3
-        System.out.print("Enter the size of the array: ");
+        System.out.print("Enter array size: ");
         int size = scanner.nextInt();
 
         int[] numbers = new int[size];
@@ -37,14 +37,22 @@ public class Main {
             numbers[i] = scanner.nextInt();
         }
 
-        System.out.print("Multiples of three: ");
+        System.out.println("Multiples of 3:");
 
         for (int num : numbers) {
             if (num % 3 == 0) {
                 System.out.print(num + ", ");
             }
         }
-
+        System.out.println();
         scanner.close();
+
+        /* Task 2
+        Task 2:
+        Given bracket sequence: [((())()(())]]
+        The sequence is incorrect.
+        The first ']' at the end should be replaced with ')'
+        Correct sequence: [((())()(()))]
+        */
     }
 }
