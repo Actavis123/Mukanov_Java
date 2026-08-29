@@ -7,6 +7,8 @@ public class Main {
         // Task 1.1
         System.out.print("Enter a number: ");
         int number = scanner.nextInt();
+        // We move the scanner to the next line to skip
+        // the newline character in the input stream
         scanner.nextLine();
 
         if (number > 7) {
@@ -21,6 +23,26 @@ public class Main {
             System.out.println("Hello, John");
         } else {
             System.out.println("There is no such name");
+        }
+
+        // Task 1.3
+        System.out.print("Enter the size of the array: ");
+        int size = scanner.nextInt();
+
+        int[] numbers = new int[size];
+
+        System.out.println("Enter " + size + " numbers:");
+
+        for (int i = 0; i < size; i++) {
+            numbers[i] = scanner.nextInt();
+        }
+
+        System.out.print("Multiples of three: ");
+
+        for (int num : numbers) {
+            if (num % 3 == 0) {
+                System.out.print(num + ", ");
+            }
         }
 
         scanner.close();
